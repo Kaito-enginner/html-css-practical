@@ -1,0 +1,176 @@
+/* PC、スマホ共通スタイル */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #ffffff;
+    
+}
+
+#nav-pc{
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    margin-top: 20px;
+}
+
+#nav-pc a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav-pc > a{
+    border: solid 1px #000000;
+    padding: 0 10px;
+}
+
+#div-a{
+    padding-right: 20px;
+}
+
+#main-visual{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#main-visual img{
+    width: 100%;
+}
+
+
+#about{
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+h1{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#about-div{
+    display: flex;
+    justify-content: center;
+}
+
+#about-div > div{
+    padding: 20px 0 0 100px;
+
+}
+
+#about-div img{
+    border-radius: 50%;
+}
+
+#works{
+    width: 100%;
+}
+
+#works > div{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#works-div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.works-item{
+    margin-top: 30px;
+    width: 240px;
+}
+
+.works-item img{
+    width: 100%;
+}
+
+.works-item > p{
+    margin-top: 0;
+}
+
+footer{
+    text-align: center;
+}
+
+
+/* スマートフォン用レイアウト */
+@media screen and (max-width: 767px){
+    #about-div{
+        display: block;
+    }
+
+    ul{
+        text-align: left;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #about-div{
+        text-align: center;
+    }
+
+    #about-div > div{
+        max-width: 420px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #nav-pc{
+        margin: 20px 0 20px 20px;
+        font-size: 28px;
+    }
+
+    #nav-pc a{
+        padding-right: 20px;
+    }
+
+    #nav-pc div a{
+        font-size: 20px;
+    }
+
+    #main-visual{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #works-div{
+        display: block;
+        margin: 0 10px;
+    }
+
+    #works{
+        text-align: center;
+    }
+
+    .works-item{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
